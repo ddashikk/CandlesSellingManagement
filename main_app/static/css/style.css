@@ -34,6 +34,7 @@ nav {
 .menu > li {
     margin: 0 1rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .menu a {
@@ -50,7 +51,7 @@ nav {
     font-weight: bold;
 }
 
-.menu-button-container {
+.menu_button_container {
     display: none;
     height: 100%;
     width: 30px;
@@ -60,13 +61,13 @@ nav {
     align-items: center;
 }
   
-#menu-toggle {
+#menu_toggle {
     display: none;
 }
   
-.menu-button,
-.menu-button::before,
-.menu-button::after {
+.menu_button,
+.menu_button::before,
+.menu_button::after {
     display: block;
     background-color: #F2F2F2;
     position: absolute;
@@ -75,27 +76,27 @@ nav {
     border-radius: 30px;
 }
   
-.menu-button::before {
+.menu_button::before {
     content: '';
     margin-top: -8px;
 }
   
-.menu-button::after {
+.menu_button::after {
     content: '';
     margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+#menu_toggle:checked + .menu_button_container .menu_button::before {
     margin-top: 0px;
     transform: rotate(405deg);
 }
   
-#menu-toggle:checked + .menu-button-container .menu-button {
+#menu_toggle:checked + .menu_button_container .menu_button {
     background: #F2F2F2;
 }
 
 @media (max-width: 700px) {
-    .menu-button-container {
+    .menu_button_container {
         display: flex;
     }
 
@@ -109,14 +110,14 @@ nav {
         align-items: center;
     }
 
-    #menu-toggle ~ .menu li {
+    #menu_toggle ~ .menu li {
         height: 0;
         margin: 0;
         padding: 0;
         border: 0;
     }
 
-    #menu-toggle:checked ~ .menu li {
+    #menu_toggle:checked ~ .menu li {
         border: 1px solid #BF2A2A;
         height: 2.5em;
         padding: 0.5em;
@@ -166,6 +167,7 @@ nav {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
     transition: transform 0.1s;
+    cursor: pointer;
 }
 
 .product_card:hover{
@@ -203,8 +205,45 @@ nav {
     text-align: center;
 }
 
+.button_tg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D9C3B0;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);   
+}
 
+.button_tg:hover {
+    transform: translateY(-3px);
+}
 
+.button_tg > li {
+    list-style-type: none;
+}
+
+.button_tg a {
+    text-decoration: none;
+    color: #BF2A2A;
+    font-weight: medium;
+    font-size: 1.2rem;
+}
+
+.tg_image {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.footer_text {
+    color: #D9C3B0;
+    font-size: 1rem;
+}
 
 footer {
     display: flex;
@@ -212,7 +251,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     background: #BF2A2A;
-    color: #F2F2F2;
+    margin-top: 25px;
+    margin-bottom: 0px;
     padding: 25px 50px;
     border-radius: 40px;
 }
