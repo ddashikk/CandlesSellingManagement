@@ -4,8 +4,9 @@ function ajaxRequest(formData, url) {
     return new Promise((resolve, reject) => {
         $.ajax({
             url: url,
-            type: 'GET',
+            type: 'POST',
             contentType: 'application/json',
+            headers: { "X-CSRFToken": document.cookie.split('=')[1] },
             dataType: 'json',
             data: formData,
             success: function (response) {
@@ -25,8 +26,8 @@ function cardHandler() {
     for (let i = 0; i < product_cards.length; i++) {
         product_cards[i].addEventListener("click", () => {
             const product_description = product_cards[i].querySelector(".product_description").innerHTML;
-            console.log(product_description)
-        })
+            ajaxRequest(product_description, '/get_product')
+        });
     }
 }
 
