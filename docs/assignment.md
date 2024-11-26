@@ -26,13 +26,11 @@
             1. ID
             2. name
             3. aroma
-            4. type
-            5. weight
-            6. contents
-            7. selling_price
-            8. material_cost
-            9. logistics_cost
-            10. packaging_cost
+            4. weight
+            5. selling_price
+            6. material_cost
+            7. logistics_cost
+            8. packaging_cost
         2. Customers:
             1. ID
             2. full_name
