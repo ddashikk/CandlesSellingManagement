@@ -2,7 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import json
 from main_app import db_access
+from django.views.decorators.csrf import ensure_csrf_cookie
   
+@ensure_csrf_cookie
 def page_products(request):
     return render(request, "page_products.html")
 
