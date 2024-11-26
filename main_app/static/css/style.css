@@ -299,6 +299,13 @@ footer {
     color: #BF2A2A;
 }
 
+#product_details .aroma, .weight, .ID, .selling_price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .button_add_to_cart {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -314,3 +321,4 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
     margin: 10px 0px;
 }
+
