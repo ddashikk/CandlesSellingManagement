@@ -33,7 +33,7 @@
         <!-- Product details -->
         <section id = "product_details">
             <!-- Image -->
-            <img src = "../static/src/001.jpg" class="details_image">
+            <img src = "{{ image }}" class="details_image">
 
             <!-- Description -->
             <div class = "description">
@@ -42,19 +42,19 @@
                 </div>
                 <div class = "aroma">
                     Аромат:&nbsp;
-                    <div id = "aroma_value"></div>
+                    <div id = "aroma_value">{{ aroma }}</div>
                 </div>
                 <div class = "weight">
                     Объём:&nbsp;
-                    <div id = "weight_value"></div>
+                    <div id = "weight_value">{{ weight }}</div>
                 </div>
                 <div class = "ID">
                     Артикул:&nbsp;
-                    <div id = "ID_value"></div>
+                    <div id = "ID_value">{{ id }}</div>
                 </div>
                 <div class = "selling_price">
                     Стоимость:&nbsp;
-                    <div id = "selling_price_value"></div>
+                    <div id = "selling_price_value">{{ selling_price }}</div>
                 </div>
 
                 <!-- Add to cart button -->
@@ -72,6 +72,4 @@
             </button>
             <div class = "footer_text">Санкт-Петербург</div>
         </footer>
-        <script src="../static/js/page_products.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </body>
