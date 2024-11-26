@@ -286,7 +286,7 @@ footer {
     color: #1E1E1E;
 }
 
-#product_details .aroma, .weight, .ID {
+#product_details .aroma, #product_details .weight, #product_details .ID {
     margin: 10px 30px;
     font-size: 1.2rem;
     color: #1E1E1E;
@@ -299,7 +299,7 @@ footer {
     color: #BF2A2A;
 }
 
-#product_details .aroma, .weight, .ID, .selling_price {
+#product_details .aroma, #product_details .weight, #product_details .ID, #product_details .selling_price {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -322,3 +322,52 @@ footer {
     margin: 10px 0px;
 }
 
+.cart_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F2F2;
+    border-radius: 40px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
+    transition: transform 0.1s;
+    margin: 20px 50px;
+}
+
+.item_name {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #1E1E1E;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+#cart .ID {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #1E1E1E;
+    font-size: 1rem;
+    margin: 5px 0px;
+}
+
+#cart .selling_price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5px 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #BF2A2A;
+}
+
+.button_delete {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
