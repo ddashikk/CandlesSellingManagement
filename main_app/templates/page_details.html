@@ -1,1 +1,75 @@
-Hello world!
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>artdashik</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <nav>
+                <!-- Logo-->
+                <div class = "logo">
+                    <img src = "../static/src/logo.png" alt = "artdashik" width = "100%" height="100%">
+                </div>
+
+                <!-- Menu -->
+                <input id = "menu_toggle" type="checkbox" />
+                <label class="menu_button_container" for="menu_toggle">
+                    <div class="menu_button"></div>
+                </label>
+                <ul class="menu">
+                    <li><a href = "#products">Товары</a></li>
+                    <li><a href = "#cart">Корзина</a></li>
+                    <li><a href = "#calculations">Расчёты</a></li>
+                 </ul>
+            </nav>
+        </header>
+
+        <!-- Product details -->
+        <section id = "product_details">
+            <!-- Image -->
+            <img src = "../static/src/001.jpg" class="details_image">
+
+            <!-- Description -->
+            <div class = "description">
+                <div class = "name">Свеча в стакане</div>
+                <div class = "aroma">
+                    Аромат:
+                    <div id = "aroma_value"></div>
+                </div>
+                <div class = "weight">
+                    Объём:
+                    <div id = "weight_value"></div>
+                </div>
+                <div class = "ID">
+                    Артикул:
+                    <div id = "ID_value"></div>
+                </div>
+                <div class = "selling_price">
+                    Стоимость:
+                    <div id = "selling_price_value"></div>
+                </div>
+
+                <!-- Add to cart button -->
+                <button class = "button_add_to_cart">Добавить в корзину</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <button class = "button_tg">
+                <div class = "tg_image">
+                    <img src = "../static/src/tg.png" width="100%" height="100%">
+                </div>
+                <li><a class="tg" href="https://t.me/daria_podtsiuk">Telegram</a></li>
+            </button>
+            <div class = "footer_text">Санкт-Петербург</div>
+        </footer>
+        <script src="../static/js/page_products.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </body>

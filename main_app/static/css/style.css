@@ -3,6 +3,9 @@ body {
     padding: 20px;
     background-color: #D9C3B0;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 nav {
@@ -136,75 +139,6 @@ nav {
     }
 }
 
-.section {
-    padding: 25px;
-}
-
-.section_title {
-    color: #BF2A2A;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 25px;
-}
-
-.products {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.product_grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.product_card{
-    background: #F2F2F2;
-    border-radius: 40px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
-    transition: transform 0.1s;
-    cursor: pointer;
-}
-
-.product_card:hover{
-    transform: translateY(-3px);
-}
-
-.product_image{
-    margin-bottom: 15px;
-}
-
-.product_image > img{
-    border-radius: 20px;
-}
-
-.product_title{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
-    color: #1E1E1E;
-}
-
-.product_price{
-    color: #BF2A2A;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.product_description{
-    color: #1E1E1E;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
 .button_tg {
     display: flex;
     flex-direction: row;
@@ -231,8 +165,9 @@ nav {
 .button_tg a {
     text-decoration: none;
     color: #BF2A2A;
-    font-weight: medium;
-    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .tg_image {
@@ -243,6 +178,7 @@ nav {
 .footer_text {
     color: #D9C3B0;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 footer {
@@ -255,4 +191,126 @@ footer {
     margin-bottom: 0px;
     padding: 25px 50px;
     border-radius: 40px;
+}
+
+.section {
+    padding: 25px;
+}
+
+.section_title {
+    color: #BF2A2A;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product_card {
+    background: #F2F2F2;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.product_card:hover {
+    transform: translateY(-3px);
+}
+
+.product_image {
+    margin-bottom: 15px;
+}
+
+.product_image > img {
+    border-radius: 20px;
+}
+
+.product_card .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #1E1E1E;
+}
+
+.product_card .selling_price {
+    color: #BF2A2A;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product_card .aroma {
+    color: #1E1E1E;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#product_details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 25px 50px;
+}
+
+.details_image {
+    max-width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
+    transition: transform 0.1s;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+#product_details .name {
+    margin: 20px 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+
+#product_details .aroma, .weight, .ID {
+    margin: 10px 30px;
+    font-size: 1.2rem;
+    color: #1E1E1E;
+}
+
+#product_details .selling_price {
+    margin: 10px 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #BF2A2A;
+}
+
+.button_add_to_cart {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    justify-content: center;
+    background-color: #BF2A2A;
+    color: #F2F2F2;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
+    margin: 10px 0px;
 }
