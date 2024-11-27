@@ -286,29 +286,29 @@ footer {
 }
 
 .details_image {
-    max-width: 40%;
+    max-width: 30%;
     border-radius: 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
     transition: transform 0.1s;
     cursor: pointer;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 #product_details .name {
-    margin: 20px 30px;
+    margin: 20px 0px;
     font-size: 1.4rem;
     font-weight: bold;
     color: #1E1E1E;
 }
 
 #product_details .aroma, #product_details .weight, #product_details .ID {
-    margin: 10px 30px;
+    margin: 10px 0px;
     font-size: 1.2rem;
     color: #1E1E1E;
 }
 
 #product_details .selling_price {
-    margin: 10px 30px;
+    margin: 10px 0px;
     font-size: 1.4rem;
     font-weight: bold;
     color: #BF2A2A;
@@ -337,7 +337,7 @@ footer {
     margin: 10px 0px;
 }
 
-.cart_grid {
+.grid {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -429,7 +429,7 @@ footer {
     justify-content: center;
 }
 
-.costs {
+.calcs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -438,16 +438,19 @@ footer {
     padding: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 40px;
-    width: 750px;
+    margin: 0px 50px 30px 50px;
 }
 
-.title_costs {
+.calcs:last-child {
+    margin: 0px 50px 5px 50px;
+}
+
+.title_calcs {
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
     color: #1E1E1E;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: 5px 0px;
 }
 
 #table_costs {

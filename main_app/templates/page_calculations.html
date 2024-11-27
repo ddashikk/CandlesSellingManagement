@@ -38,34 +38,45 @@
                 </button>
                 <div class = "section_title">Расчёты</div>
             </div>
-            <!-- Product cost -->
-            <div class="costs">
-                <div class="title_costs">Себестоимость товара</div>
-                <div class="buttons_for_costs">
-                    <input class="input_costs" type = "text" id = "IDInput" placeholder = "Введите артикул">
-                    <button class="button_costs" onclick = "showDetails()">Показать себестоимость</button>
+
+            <div class = "grid">
+                <!-- Product cost -->
+                <div class="calcs">
+                    <div class="title_calcs">Себестоимость товара</div>
+                    <div class="buttons_for_costs">
+                        <input class="input_costs" type = "text" id = "IDInput" placeholder = "Введите артикул">
+                        <button class="button_costs" onclick = "showDetails()">Показать себестоимость</button>
+                    </div>
+
+                    <table id="table_costs">
+                        <tr>
+                            <th>Артикул</th>
+                            <th>Стоимость материалов</th>
+                            <th>Логистика</th>
+                            <th>Маркировка</th>
+                            <th>Упаковка</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>50</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
                 </div>
 
-                <table id="table_costs">
-                    <tr>
-                        <th>Артикул</th>
-                        <th>Стоимость материалов</th>
-                        <th>Логистика</th>
-                        <th>Маркировка</th>
-                        <th>Упаковка</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>100</td>
-                    </tr>
-                </table>
+                <!-- Financial Model -->
+                <div class="calcs">
+                    <div class="title_calcs">Финансовая модель</div>
+                    <div class="buttons_for_costs">
+                        <input class="input_costs" type = "text" id = "IDInput" placeholder = "Введите артикул">
+                        <button class="button_costs" onclick = "showDetails()">Показать себестоимость</button>
+                    </div>
+
+                </div>
             </div>
 
-            <!-- Financial Model -->
-            
             <!-- <script src="../static/js/page_calculations.js"></script> -->
         </section>
 
