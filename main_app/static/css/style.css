@@ -197,12 +197,27 @@ footer {
     padding: 25px;
 }
 
+.section_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+#button_back {
+    border: none;
+    height: 30px;
+    background-color: #D9C3B0;
+    cursor: pointer;
+}
+
 .section_title {
     color: #BF2A2A;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    margin: 25px;
+    margin: 25px 20px;
 }
 
 .products {
@@ -262,7 +277,7 @@ footer {
     text-align: center;
 }
 
-#product_details {
+.details {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -372,18 +387,17 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 10px 5px;
+    margin-right: 20px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #BF2A2A;
 }
 
-.button_delete {
-    font-family: 'Montserrat', sans-serif;
+#button_delete {
     border: none;
     height: 30px;
+    background-color: #F2F2F2;
     cursor: pointer;
-    margin: 10px 5px;
 }
 
 .buy {
@@ -393,7 +407,7 @@ footer {
     margin: 10px 50px 5px 50px;
 }
 
-.button_buy {
+#button_buy {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     justify-content: center;

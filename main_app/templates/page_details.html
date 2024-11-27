@@ -32,33 +32,42 @@
 
         <!-- Product details -->
         <section id = "product_details">
-            <!-- Image -->
-            <img src = "{{ image }}" class="details_image">
+            <div class = "section_header">
+                <button id = "button_back">
+                    <img src = "../static/src/back.png" width="100%" height="100%">
+                </button>
+                <div class = "section_title">Подробнее о товаре</div>
+            </div>
+            
+            <div class = "details">
+                <!-- Image -->
+                <img src = "{{ image }}" class="details_image">
 
-            <!-- Description -->
-            <div class = "description">
-                <div class = "name">
-                    <div id = "name_value"></div>
-                </div>
-                <div class = "aroma">
-                    Аромат:&nbsp;
-                    <div id = "aroma_value">{{ aroma }}</div>
-                </div>
-                <div class = "weight">
-                    Объём:&nbsp;
-                    <div id = "weight_value">{{ weight }}</div>
-                </div>
-                <div class = "ID">
-                    Артикул:&nbsp;
-                    <div id = "ID_value">{{ id }}</div>
-                </div>
-                <div class = "selling_price">
-                    Стоимость:&nbsp;
-                    <div id = "selling_price_value">{{ selling_price }}</div>
-                </div>
+                <!-- Description -->
+                <div class = "description">
+                    <div class = "name">
+                        <div id = "name_value"></div>
+                    </div>
+                    <div class = "aroma">
+                        Аромат:&nbsp;
+                        <div id = "aroma_value">{{ aroma }}</div>
+                    </div>
+                    <div class = "weight">
+                        Объём:&nbsp;
+                        <div id = "weight_value">{{ weight }}</div>
+                    </div>
+                    <div class = "ID">
+                        Артикул:&nbsp;
+                        <div id = "ID_value">{{ id }}</div>
+                    </div>
+                    <div class = "selling_price">
+                        Стоимость:&nbsp;
+                        <div id = "selling_price_value">{{ selling_price }}</div>
+                    </div>
 
-                <!-- Add to cart button -->
-                <button class = "button_add_to_cart">Добавить в корзину</button>
+                    <!-- Add to cart button -->
+                    <button class = "button_add_to_cart">Добавить в корзину</button>
+                </div>
             </div>
         </section>
 
