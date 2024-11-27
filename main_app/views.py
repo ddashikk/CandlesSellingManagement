@@ -28,6 +28,7 @@ def page_calculations(request):
 def get_calculation(request):
     product_details = db_access.get_product_details_by_id(json.loads(request.body))
     response_data = {}
+    response_data['id'] = product_details['ID']
     response_data['selling_price'] = product_details['selling_price']
     response_data['material_cost'] = product_details['material_cost']
     response_data['logistics_cost'] = product_details['logistics_cost']
