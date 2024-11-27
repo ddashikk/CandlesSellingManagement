@@ -69,17 +69,17 @@ function App() {
 
         <div className = "results">
             Выручка:&nbsp;
-            <div id = "result_income">{total_income}</div>
+            <div id = "result_income">{total_income} рублей</div>
         </div>
 
         <div className = "results">
             Расходы:&nbsp;
-            <div id = "result_costs">{total_costs}</div>
+            <div id = "result_costs">{total_costs} рублей</div>
         </div>
 
         <div className = "results">
             Прибыль:&nbsp;
-            <div id = "result_profit">{total_profit}</div>
+            <div id = "result_profit">{total_profit} рублей</div>
         </div>
 
         <div className = "results">
