@@ -21,4 +21,6 @@ from main_app import views
 urlpatterns = [
     path('', views.page_products),
     path('get_product', views.page_details),
+    path('cart', views.page_cart),
+    path('calculations', views.page_calculations),
 ]

@@ -17,3 +17,9 @@ def page_details(request):
         'selling_price': product_details['selling_price'],
         'image': f'../static/src/{product_details['ID']}.jpg'
     })
+
+def page_cart(request):
+    return render(request, "page_cart.html")
+
+def page_calculations(request):
+    return render(request, "page_calculations.html")
