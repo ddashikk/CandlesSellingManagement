@@ -1,7 +1,7 @@
 function loadCart() {
     const cart_items_json = `[${sessionStorage.getItem('cart_items')}]`;
     const cart_items_added = JSON.parse(cart_items_json)
-    for (i=1; i < cart_items_added.length; i++) {
+    for (i=0; i < cart_items_added.length; i++) {
         const cart_items = document.getElementById('cart_items');
 
         const cart_item = document.createElement('div');
@@ -34,6 +34,10 @@ function loadCart() {
 
         const button_delete = document.createElement('button');
         button_delete.className = 'button_delete';
+        button_delete.addEventListener('click', () => {
+            console.log(cart_items_added[i].product_id)
+            // removeFromCart(cart_items_added[i].product_id);
+        });
 
         const button_image = document.createElement('img');
         button_image.src = 'static/src/delete.png';
@@ -51,6 +55,11 @@ function loadCart() {
         price_delete.appendChild(button_delete);
         button_delete.appendChild(button_image);
     }
+}
+
+
+function removeFromCart(id) {
+    console.log(id);
 }
 
 loadCart();
