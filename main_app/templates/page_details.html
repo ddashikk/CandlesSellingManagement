@@ -14,7 +14,7 @@
             <nav>
                 <!-- Logo-->
                 <div class = "logo">
-                    <img src = "../static/src/logo.png" alt = "artdashik" width = "100%" height="100%">
+                    <img src = "../static/src/logo.png" alt = "artdashik" width = "100%" height="100%" onclick="location.href = '/'">
                 </div>
 
                 <!-- Menu -->
@@ -23,9 +23,9 @@
                     <div class="menu_button"></div>
                 </label>
                 <ul class="menu">
-                    <li><a href = "#products">Товары</a></li>
-                    <li><a href = "#cart">Корзина</a></li>
-                    <li><a href = "#calculations">Расчёты</a></li>
+                    <li><a href = "/products">Товары</a></li>
+                    <li><a href = "/cart">Корзина</a></li>
+                    <li><a href = "/calculations">Расчёты</a></li>
                  </ul>
             </nav>
         </header>
@@ -46,7 +46,7 @@
                 <!-- Description -->
                 <div class = "description">
                     <div class = "name">
-                        <div id = "name_value"></div>
+                        <div id = "name_value">{{ name }}</div>
                     </div>
                     <div class = "aroma">
                         Аромат:&nbsp;
@@ -54,7 +54,7 @@
                     </div>
                     <div class = "weight">
                         Объём:&nbsp;
-                        <div id = "weight_value">{{ weight }}</div>
+                        <div id = "weight_value">{{ weight }} гр</div>
                     </div>
                     <div class = "ID">
                         Артикул:&nbsp;
@@ -62,12 +62,11 @@
                     </div>
                     <div class = "selling_price">
                         Стоимость:&nbsp;
-                        <div id = "selling_price_value">{{ selling_price }}</div>
+                        <div id = "selling_price_value">{{ selling_price }} рублей</div>
                     </div>
 
-                    <!-- Add to cart button -->
-                    <button class = "button_add_to_cart">Добавить в корзину</button>
-                </div>
+                <!-- Add to cart button -->
+                <button id = "button_add_to_cart">Добавить в корзину</button>
             </div>
         </section>
 
@@ -81,4 +80,5 @@
             </button>
             <div class = "footer_text">Санкт-Петербург</div>
         </footer>
+        <script src="../static/js/page_details.js"></script>
     </body>

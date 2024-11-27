@@ -25,7 +25,7 @@ function cardHandler() {
     for (let i = 0; i < product_cards.length; i++) {
         product_cards[i].addEventListener("click", () => {
             const aroma = product_cards[i].querySelector(".aroma").innerHTML;
-            ajaxRequest(aroma, '/get_product')
+            ajaxRequest(aroma, '/get_product');
         });
     }
 }

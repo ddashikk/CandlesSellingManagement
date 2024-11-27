@@ -11,6 +11,7 @@ def page_products(request):
 def page_details(request):
     product_details = db_access.get_product_details(json.loads(request.body))
     return render(request, "page_details.html", {
+        'name': product_details['name'],
         'id': product_details['ID'],
         'weight': product_details['weight'],
         'aroma': product_details['aroma'],

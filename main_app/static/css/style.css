@@ -321,7 +321,7 @@ footer {
     justify-content: flex-start;
 }
 
-.button_add_to_cart {
+#button_add_to_cart {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     justify-content: center;
