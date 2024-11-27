@@ -486,34 +486,49 @@ tr:last-child td:last-child { border-bottom-right-radius: 20px; }
 tr:first-child th { border-top-style: solid; }
 tr th:first-child, tr td:first-child { border-left-style: solid; }
 
-.input_costs {
+.buttons_for_calcs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_calcs {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     text-align: center;
-    justify-content: center;
     background-color: #F2F2F2;
     color: #1E1E1E;
-    align-items: center;
     border: none;
     border-radius: 30px;
     padding: 10px 20px;
     transition: background-color 0.2s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
-    margin: 10px 5px;
+    margin: 10px;
 }
 
-.button_costs {
+.button_calcs {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    justify-content: center;
+    text-align: center;
     background-color: #BF2A2A;
     color: #F2F2F2;
-    align-items: center;
     border: none;
     border-radius: 30px;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.2s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
-    margin: 10px 5px;
+    margin: 10px;
 }
+
+.results {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1E1E1E;
+    margin: 5px 0px;
+}   
