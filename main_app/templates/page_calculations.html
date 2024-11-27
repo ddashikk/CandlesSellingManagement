@@ -39,63 +39,35 @@
                 <div class = "section_title">Расчёты</div>
             </div>
 
-            <div class = "grid">
-                <!-- Product cost -->
-                <div class="calcs">
-                    <div class="title_calcs">Себестоимость товара</div>
-                    <div class="buttons_for_calcs">
-                        <input class="input_calcs" type = "text" id = "IDInput" placeholder = "Введите артикул">
-                        <button class="button_calcs" onclick = "get_calculation()">Показать себестоимость</button>
-                    </div>
-
-                    <table id="table_costs">
-                        <tr>
-                            <th>Артикул</th>
-                            <th style = "display: none;">Стоимость</th>
-                            <th>Стоимость материалов</th>
-                            <th>Логистика</th>
-                            <th>Упаковка</th>
-                            <th>Маркировка</th>
-                        </tr>
-                        <tr>
-                            <td id="product_id"></td>
-                            <td style = "display: none;" id="selling_price"></td>
-                            <td id="material_cost"></td>
-                            <td id="logistics_cost"></td>
-                            <td id="packaging_cost"></td>
-                            <td id="labeling_cost"></td>
-                        </tr>
-                    </table>
+            <!-- Product cost -->
+            <div class = "calcs">
+                <div class = "title_calcs">Себестоимость товара</div>
+                <div class = "buttons_for_calcs">
+                    <input class = "input_calcs" type = "text" id = "IDInput" placeholder = "Введите артикул">
+                    <button class = "button_calcs" onclick = "get_calculation()">Показать себестоимость</button>
                 </div>
 
-                <!-- Financial Model -->
-                <div class="calcs">
-                    <div class="title_calcs">Финансовая модель</div>
-                    <div class="buttons_for_calcs">
-                        <input class="input_calcs" type = "text" id = "AmountInput" placeholder = "Введите количество">
-                        <button class="button_calcs" onclick = "finModel()">Посчитать</button>
-                    </div>
-
-                    <!-- Income -->
-                    <div class = "results">
-                        Выручка:&nbsp;
-                        <div id = "result_income">функция</div>
-                    </div>
-
-                    <!-- Costs -->
-                    <div class = "results">
-                        Расходы:&nbsp;
-                        <div id = "result_income">функция</div>
-                    </div>
-
-                    <!-- Net Income -->
-                    <div class = "results">
-                        Прибыль:&nbsp;
-                        <div id = "result_income">функция</div>
-                    </div>
-
-                </div>
+                <table id = "table_costs">
+                    <tr>
+                        <th>Артикул</th>
+                        <th style = "display: none;">Стоимость</th>
+                        <th>Стоимость материалов</th>
+                        <th>Логистика</th>
+                        <th>Упаковка</th>
+                        <th>Маркировка</th>
+                    </tr>
+                    <tr>
+                        <td id="product_id"></td>
+                        <td style = "display: none;" id="selling_price"></td>
+                        <td id="material_cost"></td>
+                        <td id="logistics_cost"></td>
+                        <td id="packaging_cost"></td>
+                        <td id="labeling_cost"></td>
+                    </tr>
+                </table>
             </div>
+
+            <button class = "button_calcs" onclick="location.href = 'http://127.0.0.1:3000/'">Финансовая модель (react)</button>
         </section>
 
         <!-- Footer -->
@@ -109,7 +81,6 @@
             <div class = "footer_text">Санкт-Петербург</div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <!-- <script src="../static/js/page_calculations.js"></script> -->
         <script src="../static/js/get_calculations.js"></script>
-        
     </body>
+</html>
