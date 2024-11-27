@@ -23,4 +23,5 @@ urlpatterns = [
     path('get_product', views.page_details),
     path('cart', views.page_cart),
     path('calculations', views.page_calculations),
+    path('get_calculations', views.get_calculation),
 ]

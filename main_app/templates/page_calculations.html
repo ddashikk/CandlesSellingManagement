@@ -45,7 +45,7 @@
                     <div class="title_calcs">Себестоимость товара</div>
                     <div class="buttons_for_calcs">
                         <input class="input_calcs" type = "text" id = "IDInput" placeholder = "Введите артикул">
-                        <button class="button_calcs" onclick = "showDetails()">Показать себестоимость</button>
+                        <button class="button_calcs" onclick = "get_calculation()">Показать себестоимость</button>
                     </div>
 
                     <table id="table_costs">
@@ -58,12 +58,12 @@
                             <th>Маркировка</th>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td style = "display: none;">100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>50</td>
-                            <td>100</td>
+                            <td id="product_id"></td>
+                            <td style = "display: none;" id="selling_price"></td>
+                            <td id="material_cost"></td>
+                            <td id="logistics_cost"></td>
+                            <td id="packaging_cost"></td>
+                            <td id="labeling_cost"></td>
                         </tr>
                     </table>
                 </div>
@@ -108,5 +108,8 @@
             </button>
             <div class = "footer_text">Санкт-Петербург</div>
         </footer>
-        <script src="../static/js/page_calculations.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- <script src="../static/js/page_calculations.js"></script> -->
+        <script src="../static/js/get_calculations.js"></script>
+        
     </body>

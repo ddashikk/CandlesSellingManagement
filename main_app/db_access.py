@@ -33,3 +33,9 @@ def get_product_details(aroma, cursor):
     cursor.execute(f"SELECT * FROM products WHERE aroma = '{aroma}';")
     res = cursor.fetchone()
     return res
+
+@db_connect
+def get_product_details_by_id(id, cursor):
+    cursor.execute(f"SELECT * FROM products WHERE ID = '{id}';")
+    res = cursor.fetchone()
+    return res
