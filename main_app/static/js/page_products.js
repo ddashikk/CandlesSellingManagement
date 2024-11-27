@@ -1,6 +1,4 @@
 function ajaxRequest(formData, url) {
-    /** Функция, возвращающая Promise, выполняющая запросы на сервер. Получает на входе две переменные:
-     * Данные для передачи и url-адрес запроса.*/
     return new Promise((resolve, reject) => {
         $.ajax({
             url: url,
